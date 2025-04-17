@@ -88,11 +88,11 @@ public:
 
     void printOutputScreen(int current_time_step,
         LinkedQueue<Patient*>* allPatients,
-        EarlyPList* earlyPatients,
+        DerivedpriQueue_Early* earlyPatients,
         priQueue<Patient*>* latePatients,
-        EU_WaitList* uWaitingPatients,
-        EU_WaitList* eWaitingPatients,
-        X_WaitList* xWaitingPatients,
+        U_E_Waiting_DerivedQueue* uWaitingPatients,
+        U_E_Waiting_DerivedQueue* eWaitingPatients,
+        X_Waiting_DerivedQueue* xWaitingPatients,
         LinkedQueue<Resource*>* eDevices,
         LinkedQueue<Resource*>* uDevices,
         LinkedQueue<Resource*>* xRooms,
@@ -194,3 +194,4 @@ public:
 
 
 };
+
